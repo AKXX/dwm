@@ -61,6 +61,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "rofi", "-show", "run", NULL };
 static const char *termcmd[]  = { "urxvtc", NULL };
 static const char scratchpadname[] = "scratchpad";
+<<<<<<< HEAD
 static const char *scratchpadcmd[] = { "urxvtc", "-T", scratchpadname, NULL };
 
 static Key keys[] = {
