@@ -3,7 +3,7 @@
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const int showbar            = 1;        /* 0 means no bar */
+static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Misc Tamsyn:size=13", 
                                          "FontAwesome:size=11" 
@@ -61,7 +61,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "rofi", "-show", "run", NULL };
 static const char *termcmd[]  = { "urxvtc", NULL };
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = { "urxvtc", "-T", scratchpadname, NULL };
+static const char *scratchpadcmd[] = { "urxvtc", "--geometry", "70x20", "-T", scratchpadname, NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
